@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36915.13 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp", "WindowsFormsApp\WindowsFormsApp.csproj", "{9CAE369C-74F5-4F5C-A7C2-50926967A771}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Pictures\Screenshots\logo.png = ..\..\..\Pictures\Screenshots\logo.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "voice", "voice", "{06207084-3B73-4D8D-95BE-6F6C30BCA249}"
+	ProjectSection(SolutionItems) = preProject
+		..\ConsoleApp1\ConsoleApp1\Voice\aisound.wav = ..\ConsoleApp1\ConsoleApp1\Voice\aisound.wav
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CAE369C-74F5-4F5C-A7C2-50926967A771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CAE369C-74F5-4F5C-A7C2-50926967A771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CAE369C-74F5-4F5C-A7C2-50926967A771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CAE369C-74F5-4F5C-A7C2-50926967A771}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6E37C69-70F8-4957-9263-BF0E4E3E6EE0}
+	EndGlobalSection
+EndGlobal
