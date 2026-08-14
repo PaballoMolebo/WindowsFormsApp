@@ -35,18 +35,19 @@
             // 
             // button1
             // 
-            button1.Location = new Point(394, 194);
+            button1.Location = new Point(788, 271);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 0;
             button1.Text = "Start!";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(308, 28);
+            pictureBox1.Location = new Point(22, 24);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(228, 148);
+            pictureBox1.Size = new Size(760, 494);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
@@ -54,7 +55,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(859, 550);
             Controls.Add(pictureBox1);
             Controls.Add(button1);
             Name = "Form1";
