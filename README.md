@@ -1,0 +1,4 @@
+I have created a logo image for my cyber security chatbot system. The logo is designed to represent the core values of security, trust, and innovation. It features a shield symbolizing protection, combined with a sleek, modern design to convey technological advancement. The color scheme includes shades of blue and green, which are often associated with safety and reliability.
+An audio voice for the chatbot has also been developed, providing a clear and professional tone that enhances user interaction. The voice is designed to be friendly yet authoritative, ensuring users feel confident in the information provided by the chatbot.
+Then i proceeded to create a Form1 design for the home page for the chatbot application, where when a user runs the application they'll be greeted with the logo and a welcoming message. 
+On the right hand side there is a Start button i created for users to initiate interaction with the chatbot. 
