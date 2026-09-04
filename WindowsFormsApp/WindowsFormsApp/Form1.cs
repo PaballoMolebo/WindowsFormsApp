@@ -62,5 +62,10 @@ namespace WindowsFormsApp
         {
 
         }
+
+        private void txtUserInput_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
     }
 }

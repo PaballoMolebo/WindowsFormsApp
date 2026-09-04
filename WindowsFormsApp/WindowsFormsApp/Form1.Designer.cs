@@ -38,7 +38,8 @@
             // 
             // button1
             // 
-            button1.Location = new Point(307, 600);
+            button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            button1.Location = new Point(303, 596);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 0;
@@ -60,6 +61,7 @@
             // 
             // txtLog
             // 
+            txtLog.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             txtLog.Location = new Point(148, 597);
             txtLog.Name = "txtLog";
             txtLog.ReadOnly = true;
@@ -71,11 +73,13 @@
             // 
             // txtUserInput
             // 
+            txtUserInput.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             txtUserInput.Location = new Point(436, 597);
             txtUserInput.Name = "txtUserInput";
             txtUserInput.Size = new Size(100, 23);
             txtUserInput.TabIndex = 3;
             txtUserInput.TextChanged += txtUserInput_TextChanged;
+            txtUserInput.KeyDown += txtUserInput_KeyDown;
             // 
             // button2
             // 
