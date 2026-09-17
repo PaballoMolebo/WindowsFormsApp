@@ -78,5 +78,5 @@ Response returned to Form1
         ↓
 Response displayed in txtLog
 
-## MIT LISCENCE
+## MIT LICENCE
 @ MOLEBOGENG MAUMAU
