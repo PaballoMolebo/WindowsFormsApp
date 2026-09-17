@@ -39,11 +39,11 @@
             // button1
             // 
             button1.Anchor = AnchorStyles.Right;
-            button1.Location = new Point(477, 412);
+            button1.Location = new Point(377, 325);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 0;
-            button1.Text = "Send";
+            button1.Text = "START";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             button1.KeyDown += button1_KeyDown;
@@ -51,7 +51,7 @@
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            pictureBox1.Location = new Point(39, 12);
+            pictureBox1.Location = new Point(277, 32);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(269, 270);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -62,7 +62,7 @@
             // txtLog
             // 
             txtLog.Anchor = AnchorStyles.Right;
-            txtLog.Location = new Point(254, 464);
+            txtLog.Location = new Point(268, 464);
             txtLog.Name = "txtLog";
             txtLog.ReadOnly = true;
             txtLog.ScrollBars = RichTextBoxScrollBars.Vertical;
@@ -74,9 +74,9 @@
             // txtUserInput
             // 
             txtUserInput.Anchor = AnchorStyles.Right;
-            txtUserInput.Location = new Point(355, 412);
+            txtUserInput.Location = new Point(312, 368);
             txtUserInput.Name = "txtUserInput";
-            txtUserInput.Size = new Size(100, 23);
+            txtUserInput.Size = new Size(212, 23);
             txtUserInput.TabIndex = 3;
             txtUserInput.TextChanged += txtUserInput_TextChanged;
             txtUserInput.KeyDown += txtUserInput_KeyDown;
@@ -84,11 +84,11 @@
             // button2
             // 
             button2.Anchor = AnchorStyles.Right;
-            button2.Location = new Point(254, 411);
+            button2.Location = new Point(377, 410);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 4;
-            button2.Text = "Start!";
+            button2.Text = "SEND";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click_1;
             // 
@@ -96,6 +96,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(859, 751);
             Controls.Add(button2);
             Controls.Add(txtUserInput);
