@@ -39,7 +39,7 @@
             // button1
             // 
             button1.Anchor = AnchorStyles.Right;
-            button1.Location = new Point(377, 325);
+            button1.Location = new Point(429, 441);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 0;
@@ -51,9 +51,9 @@
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            pictureBox1.Location = new Point(277, 32);
+            pictureBox1.Location = new Point(61, 60);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(269, 270);
+            pictureBox1.Size = new Size(211, 186);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
@@ -62,11 +62,14 @@
             // txtLog
             // 
             txtLog.Anchor = AnchorStyles.Right;
-            txtLog.Location = new Point(268, 464);
+            txtLog.BackColor = SystemColors.ActiveCaption;
+            txtLog.BorderStyle = BorderStyle.None;
+            txtLog.ForeColor = SystemColors.ButtonHighlight;
+            txtLog.Location = new Point(356, 36);
             txtLog.Name = "txtLog";
             txtLog.ReadOnly = true;
             txtLog.ScrollBars = RichTextBoxScrollBars.Vertical;
-            txtLog.Size = new Size(298, 275);
+            txtLog.Size = new Size(354, 329);
             txtLog.TabIndex = 2;
             txtLog.Text = "";
             txtLog.TextChanged += txtLog_TextChanged;
@@ -74,7 +77,7 @@
             // txtUserInput
             // 
             txtUserInput.Anchor = AnchorStyles.Right;
-            txtUserInput.Location = new Point(312, 368);
+            txtUserInput.Location = new Point(429, 386);
             txtUserInput.Name = "txtUserInput";
             txtUserInput.Size = new Size(212, 23);
             txtUserInput.TabIndex = 3;
@@ -84,7 +87,7 @@
             // button2
             // 
             button2.Anchor = AnchorStyles.Right;
-            button2.Location = new Point(377, 410);
+            button2.Location = new Point(566, 441);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 4;

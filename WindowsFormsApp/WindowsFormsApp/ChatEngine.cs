@@ -148,16 +148,16 @@ public class ChatEngine
         CaptureUserInfo(input);
 
         // Greetings
-        if (ContainsAny(question, "hello", "hi", "hey", "good morning",
+        if (ContainsAny(question, "hello", "hy", "hi", "hey", "good morning",
                         "good afternoon", "good evening"))
         {
             if (!string.IsNullOrWhiteSpace(userName))
             {
                 return "Hello " + userName +
-                       "! What cybersecurity question can I help you with?";
+                       "! How can I help you?";
             }
 
-            return "Hello! What cybersecurity question can I help you with?";
+            return "Hello! Which question can I help you with?";
         }
 
         // Goodbye
@@ -199,7 +199,7 @@ public class ChatEngine
                        lastTopic + "?";
             }
 
-            return "I can explain more. Please tell me which cybersecurity topic you would like to discuss.";
+            return "I can explain more, what do you like to know more about";
         }
 
         // Find a cybersecurity keyword
@@ -221,7 +221,7 @@ public class ChatEngine
                 return "Your name is " + userName + ".";
             }
 
-            return "You haven't told me your name yet.";
+            return "You haven't told me your name yet. Just joking your name is " + userName;
         }
 
         // Favourite topic
@@ -230,7 +230,7 @@ public class ChatEngine
         {
             if (!string.IsNullOrWhiteSpace(favouriteTopic))
             {
-                return "Your favourite topic is " + favouriteTopic + ".";
+                return userName + "your favourite topic is " + favouriteTopic + ".";
             }
 
             return "You haven't told me your favourite topic yet.";
@@ -295,7 +295,7 @@ public class ChatEngine
             }
         }
 
-        return "It's understandable to feel concerned. I can help explain the cybersecurity issue step by step.";
+        return "It's understandable to feel concerned. I can help explain any issue step by step.";
     }
 
     // Selects a random response from a list
