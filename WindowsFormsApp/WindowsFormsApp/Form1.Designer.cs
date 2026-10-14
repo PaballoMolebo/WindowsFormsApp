@@ -28,25 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
             pictureBox1 = new PictureBox();
             txtLog = new RichTextBox();
             txtUserInput = new TextBox();
             button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.Anchor = AnchorStyles.Right;
-            button1.Location = new Point(429, 441);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "START";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            button1.KeyDown += button1_KeyDown;
             // 
             // pictureBox1
             // 
@@ -65,7 +52,7 @@
             txtLog.BackColor = SystemColors.ActiveCaption;
             txtLog.BorderStyle = BorderStyle.None;
             txtLog.ForeColor = SystemColors.ButtonHighlight;
-            txtLog.Location = new Point(356, 36);
+            txtLog.Location = new Point(395, 41);
             txtLog.Name = "txtLog";
             txtLog.ReadOnly = true;
             txtLog.ScrollBars = RichTextBoxScrollBars.Vertical;
@@ -87,7 +74,7 @@
             // button2
             // 
             button2.Anchor = AnchorStyles.Right;
-            button2.Location = new Point(566, 441);
+            button2.Location = new Point(660, 386);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 4;
@@ -105,7 +92,6 @@
             Controls.Add(txtUserInput);
             Controls.Add(txtLog);
             Controls.Add(pictureBox1);
-            Controls.Add(button1);
             Name = "Form1";
             Text = "Start!";
             Load += Form1_Load;
