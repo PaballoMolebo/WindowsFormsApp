@@ -28,7 +28,7 @@ namespace WindowsFormsApp
             flowChat.WrapContents = false;
             flowChat.AutoScroll = true;
             flowChat.Padding = new Padding(10);
-            flowChat.BackColor = Color.White;
+            flowChat.BackColor = Color.Navy;
             flowChat.Location = txtLog.Location;
             flowChat.Size = txtLog.Size;
             flowChat.Anchor = txtLog.Anchor;
@@ -38,39 +38,11 @@ namespace WindowsFormsApp
             flowChat.SizeChanged += (s, e) => ResizeChatRows();
         }
 
-        // === DISPLAY UNDER IMAGE ===
-        private void CreateUnderLogoDisplay()
-        {
-            panelUnderLogo = new Panel();
-            panelUnderLogo.Size = new Size(pictureBox1.Width, 70);
-            panelUnderLogo.BackColor = Color.FromArgb(30, 41, 59);
-            panelUnderLogo.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y + pictureBox1.Height + 10);
-
-            lblConnected = new Label();
-            lblConnected.Location = new Point(10, 8);
-            lblConnected.Size = new Size(pictureBox1.Width - 20, 22);
-            lblConnected.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lblConnected.ForeColor = Color.FromArgb(34, 197, 94);
-            lblConnected.Text = "Connected"; 
-
-            lblVersion = new Label();
-            lblVersion.Location = new Point(10, 35);
-            lblVersion.Size = new Size(pictureBox1.Width - 20, 25);
-            lblVersion.Font = new Font("Segoe UI", 8F);
-            lblVersion.ForeColor = Color.FromArgb(200, 200, 200);
-            lblVersion.Text = "Version 2.1.0 • Secure Mode ON";
-
-            panelUnderLogo.Controls.Add(lblConnected);
-            panelUnderLogo.Controls.Add(lblVersion);
-
-            pictureBox1.Parent.Controls.Add(panelUnderLogo);
-            panelUnderLogo.BringToFront();
-        }
+        // Displaying the connected image
 
         private void Form1_Load(object sender, EventArgs e)
         {
             DisplayLogo();
-            CreateUnderLogoDisplay(); // Create after logo loaded so position is correct
             AddMessage("Hello! I am your cybersecurity chatbot.", false);
             AddMessage("You can ask me about passwords, phishing, malware, firewalls, encryption, VPNs, 2FA and online safety.", false);
             txtUserInput.Focus();
@@ -101,8 +73,8 @@ namespace WindowsFormsApp
             bubble.Font = new Font("Segoe UI", 10F);
             bubble.Text = (isUser ? "You" : "Bot") + Environment.NewLine + message;
             bubble.Padding = new Padding(12);
-            bubble.BackColor = isUser ? Color.FromArgb(204, 239, 211) : Color.White;
-            bubble.ForeColor = Color.Navy;
+            bubble.BackColor = isUser ? Color.SeaGreen : Color.Navy;
+            bubble.ForeColor = Color.White;
             Size textSize = TextRenderer.MeasureText(bubble.Text, bubble.Font, new Size(bubbleWidth - 24, 0), TextFormatFlags.WordBreak);
             bubble.Height = textSize.Height + 28;
             row.Height = bubble.Height;
@@ -161,5 +133,15 @@ namespace WindowsFormsApp
         private void pictureBox1_Click(object sender, EventArgs e) { }
         private void txtLog_TextChanged(object sender, EventArgs e) { }
         private void button1_KeyDown(object sender, KeyEventArgs e) { }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
