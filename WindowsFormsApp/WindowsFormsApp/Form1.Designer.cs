@@ -35,6 +35,7 @@
             button2 = new Button();
             pictureBox2 = new PictureBox();
             textBox1 = new TextBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -42,7 +43,7 @@
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            pictureBox1.Location = new Point(64, 163);
+            pictureBox1.Location = new Point(64, 64);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(211, 186);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -56,7 +57,7 @@
             txtLog.BackColor = SystemColors.InactiveCaption;
             txtLog.BorderStyle = BorderStyle.None;
             txtLog.ForeColor = SystemColors.ButtonHighlight;
-            txtLog.Location = new Point(393, 106);
+            txtLog.Location = new Point(387, 181);
             txtLog.Name = "txtLog";
             txtLog.ReadOnly = true;
             txtLog.ScrollBars = RichTextBoxScrollBars.Vertical;
@@ -68,9 +69,9 @@
             // txtUserInput
             // 
             txtUserInput.Anchor = AnchorStyles.Right;
-            txtUserInput.Location = new Point(427, 451);
+            txtUserInput.Location = new Point(387, 526);
             txtUserInput.Name = "txtUserInput";
-            txtUserInput.Size = new Size(212, 23);
+            txtUserInput.Size = new Size(246, 23);
             txtUserInput.TabIndex = 3;
             txtUserInput.TextChanged += txtUserInput_TextChanged;
             txtUserInput.KeyDown += txtUserInput_KeyDown;
@@ -78,18 +79,21 @@
             // button2
             // 
             button2.Anchor = AnchorStyles.Right;
-            button2.Location = new Point(658, 451);
+            button2.BackColor = Color.MediumSeaGreen;
+            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = SystemColors.ButtonHighlight;
+            button2.Location = new Point(666, 525);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 4;
             button2.Text = "SEND";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click_1;
             // 
             // pictureBox2
             // 
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
-            pictureBox2.Location = new Point(64, 374);
+            pictureBox2.Location = new Point(64, 273);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(211, 50);
             pictureBox2.TabIndex = 5;
@@ -101,13 +105,26 @@
             textBox1.BackColor = Color.MediumSeaGreen;
             textBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox1.ForeColor = SystemColors.HighlightText;
-            textBox1.Location = new Point(427, 64);
+            textBox1.Location = new Point(427, 80);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(278, 23);
             textBox1.TabIndex = 6;
             textBox1.Text = "Security Chat - Live Session";
             textBox1.TextAlign = HorizontalAlignment.Center;
             textBox1.TextChanged += textBox1_TextChanged;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.MediumSeaGreen;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ButtonHighlight;
+            button1.Location = new Point(126, 416);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 7;
+            button1.Text = "START";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click_1;
             // 
             // Form1
             // 
@@ -116,6 +133,7 @@
             BackColor = SystemColors.ActiveCaption;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(859, 751);
+            Controls.Add(button1);
             Controls.Add(textBox1);
             Controls.Add(pictureBox2);
             Controls.Add(button2);
