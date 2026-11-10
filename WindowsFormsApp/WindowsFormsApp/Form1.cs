@@ -1,6 +1,8 @@
+using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WindowsFormsApp
 {
@@ -55,7 +57,9 @@ namespace WindowsFormsApp
                 pictureBox1.Image = Image.FromFile(@"C:\Users\Student\Pictures\Screenshots\logo.png");
             }
             catch { }
+
         }
+
 
         private void AddMessage(string message, bool isUser)
         {
@@ -145,6 +149,11 @@ namespace WindowsFormsApp
         }
 
         private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabChat_Click(object sender, EventArgs e)
         {
 
         }
