@@ -58,12 +58,7 @@ Contributions are welcome.
 ## Coding standards
 
 - Targets C# 12 and .NET 8. 
-
-## License
-
-Molebogeng Maumau © 2026. All rights reserved. 
-
-## Author / Contact
+ 
 
 # Cybersecurity Chatbot (WindowsFormsApp)
 
@@ -73,7 +68,7 @@ The project demonstrates Windows Forms GUI development, object-oriented design, 
 
 ## Features
 
-### 1. Cybersecurity Chatbot - `Services/ChatbotEngine.cs`
+###  Cybersecurity Chatbot - `Services/ChatbotEngine.cs`
 - **Keyword recognition** for: `password`, `phishing`, `malware`, `antivirus`, `firewall`, `hacking`, `2fa`, `two factor`, `encryption`, `vpn`, `social engineering`, `privacy`, `cybersecurity`, `scam`
 - **3+ varied responses per keyword** - randomized with `GetRandomResponse()` that avoids repeating the last answer
 - **Sentiment detection** - detects `worried`, `scared`, `nervous`, `frustrated`, `confused`, `afraid`, `concerned`, `anxious`, `overwhelmed`, `stressed`, `angry`, `upset`, `lost` and combines mood + topic, e.g. "I'm worried about phishing" gives an empathetic + phishing answer
@@ -182,5 +177,8 @@ Note: Running WinForms from the command line requires Windows.
 ## Project Structure
 
 
-Molebogeng Maumau  
-For issues or feature requests, please open an issue on the repository.
+
+## License
+
+Molebogeng Maumau © 2026. All rights reserved. 
+
