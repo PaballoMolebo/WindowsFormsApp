@@ -2,40 +2,17 @@
 {
     partial class Form1
     {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
+            if (disposing && (components != null)) components.Dispose();
             base.Dispose(disposing);
         }
 
         #region Windows Form Designer generated code
-
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            pictureBox1 = new PictureBox();
-            txtLog = new RichTextBox();
-            txtUserInput = new TextBox();
-            button2 = new Button();
-            pictureBox2 = new PictureBox();
-            textBox1 = new TextBox();
-            button1 = new Button();
             tabControl1 = new TabControl();
             tabChat = new TabPage();
             textBox3 = new TextBox();
@@ -46,10 +23,23 @@
             textBox2 = new TextBox();
             button3 = new Button();
             tabTasks = new TabPage();
+            lblTaskInfo = new Label();
+            lblTaskTitle = new Label();
+            txtTaskTitle = new TextBox();
+            lblTaskDesc = new Label();
+            txtTaskDescription = new TextBox();
+            lblTaskDue = new Label();
+            dtpTaskDueDate = new DateTimePicker();
+            btnAddTask = new Button();
+            lstTasks = new ListBox();
+            lblTaskDetail = new Label();
+            lblTaskCount = new Label();
+            btnCompleteTask = new Button();
+            btnDeleteTask = new Button();
             tabQuiz = new TabPage();
-            btnNextQuestion_click = new Button();
-            btnSubmitAnswer_click = new Button();
-            btnStartQuiz_click = new Button();
+            btnNextQuestion = new Button();
+            btnSubmitAnswer = new Button();
+            btnStartQuiz = new Button();
             rdoOptionD = new RadioButton();
             rdoOptionC = new RadioButton();
             rdoOptionB = new RadioButton();
@@ -61,103 +51,16 @@
             lblQuestionNumber = new Label();
             lblScore = new Label();
             tabLog = new TabPage();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            lstActivityLog = new ListBox();
+            btnShowMoreLog = new Button();
             tabControl1.SuspendLayout();
             tabChat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            tabTasks.SuspendLayout();
             tabQuiz.SuspendLayout();
+            tabLog.SuspendLayout();
             SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1267, 751);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
-            // txtLog
-            // 
-            txtLog.Anchor = AnchorStyles.Right;
-            txtLog.BackColor = SystemColors.InactiveCaption;
-            txtLog.BorderStyle = BorderStyle.None;
-            txtLog.ForeColor = SystemColors.ButtonHighlight;
-            txtLog.Location = new Point(739, 186);
-            txtLog.Name = "txtLog";
-            txtLog.ReadOnly = true;
-            txtLog.ScrollBars = RichTextBoxScrollBars.Vertical;
-            txtLog.Size = new Size(354, 329);
-            txtLog.TabIndex = 2;
-            txtLog.Text = "";
-            txtLog.TextChanged += txtLog_TextChanged;
-            // 
-            // txtUserInput
-            // 
-            txtUserInput.Anchor = AnchorStyles.Right;
-            txtUserInput.Location = new Point(795, 526);
-            txtUserInput.Name = "txtUserInput";
-            txtUserInput.Size = new Size(246, 23);
-            txtUserInput.TabIndex = 3;
-            txtUserInput.TextChanged += txtUserInput_TextChanged;
-            txtUserInput.KeyDown += txtUserInput_KeyDown;
-            // 
-            // button2
-            // 
-            button2.Anchor = AnchorStyles.Right;
-            button2.BackColor = Color.MediumSeaGreen;
-            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = SystemColors.ButtonHighlight;
-            button2.Location = new Point(1074, 525);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 4;
-            button2.Text = "SEND";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click_1;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
-            pictureBox2.Dock = DockStyle.Fill;
-            pictureBox2.Location = new Point(0, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1267, 751);
-            pictureBox2.TabIndex = 5;
-            pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
-            // 
-            // textBox1
-            // 
-            textBox1.BackColor = Color.MediumSeaGreen;
-            textBox1.Dock = DockStyle.Fill;
-            textBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.ForeColor = SystemColors.HighlightText;
-            textBox1.Location = new Point(0, 0);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(1267, 23);
-            textBox1.TabIndex = 6;
-            textBox1.Text = "Security Chat - Live Session";
-            textBox1.TextAlign = HorizontalAlignment.Center;
-            textBox1.TextChanged += textBox1_TextChanged;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.MediumSeaGreen;
-            button1.Dock = DockStyle.Fill;
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(0, 0);
-            button1.Name = "button1";
-            button1.Size = new Size(1267, 751);
-            button1.TabIndex = 7;
-            button1.Text = "START";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click_1;
             // 
             // tabControl1
             // 
@@ -181,7 +84,6 @@
             tabChat.Controls.Add(richTextBox1);
             tabChat.Controls.Add(pictureBox4);
             tabChat.Controls.Add(textBox2);
-            tabChat.Controls.Add(txtLog);
             tabChat.Controls.Add(button3);
             tabChat.Location = new Point(4, 24);
             tabChat.Name = "tabChat";
@@ -194,7 +96,7 @@
             // textBox3
             // 
             textBox3.BackColor = Color.MediumSeaGreen;
-            textBox3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             textBox3.ForeColor = SystemColors.HighlightText;
             textBox3.Location = new Point(371, 85);
             textBox3.Name = "textBox3";
@@ -207,7 +109,7 @@
             // button4
             // 
             button4.BackColor = Color.MediumSeaGreen;
-            button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button4.ForeColor = SystemColors.ButtonHighlight;
             button4.Location = new Point(297, 407);
             button4.Name = "button4";
@@ -267,7 +169,7 @@
             // 
             button3.Anchor = AnchorStyles.Right;
             button3.BackColor = Color.MediumSeaGreen;
-            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button3.ForeColor = SystemColors.ButtonHighlight;
             button3.Location = new Point(1018, 530);
             button3.Name = "button3";
@@ -279,20 +181,143 @@
             // 
             // tabTasks
             // 
+            tabTasks.BackColor = Color.CadetBlue;
+            tabTasks.Controls.Add(lblTaskInfo);
+            tabTasks.Controls.Add(lblTaskTitle);
+            tabTasks.Controls.Add(txtTaskTitle);
+            tabTasks.Controls.Add(lblTaskDesc);
+            tabTasks.Controls.Add(txtTaskDescription);
+            tabTasks.Controls.Add(lblTaskDue);
+            tabTasks.Controls.Add(dtpTaskDueDate);
+            tabTasks.Controls.Add(btnAddTask);
+            tabTasks.Controls.Add(lstTasks);
+            tabTasks.Controls.Add(lblTaskDetail);
+            tabTasks.Controls.Add(lblTaskCount);
+            tabTasks.Controls.Add(btnCompleteTask);
+            tabTasks.Controls.Add(btnDeleteTask);
             tabTasks.Location = new Point(4, 24);
             tabTasks.Name = "tabTasks";
             tabTasks.Padding = new Padding(3);
             tabTasks.Size = new Size(1259, 723);
             tabTasks.TabIndex = 1;
             tabTasks.Text = "Task Assistant";
-            tabTasks.UseVisualStyleBackColor = true;
+            // 
+            // lblTaskInfo
+            // 
+            lblTaskInfo.Location = new Point(20, 20);
+            lblTaskInfo.Name = "lblTaskInfo";
+            lblTaskInfo.Size = new Size(600, 40);
+            lblTaskInfo.TabIndex = 0;
+            lblTaskInfo.Text = "Use Chat to add tasks: type 'Add task - Review privacy settings'";
+            // 
+            // lblTaskTitle
+            // 
+            lblTaskTitle.Location = new Point(20, 70);
+            lblTaskTitle.Name = "lblTaskTitle";
+            lblTaskTitle.Size = new Size(100, 20);
+            lblTaskTitle.TabIndex = 1;
+            lblTaskTitle.Text = "Task Title:";
+            // 
+            // txtTaskTitle
+            // 
+            txtTaskTitle.Location = new Point(130, 70);
+            txtTaskTitle.Name = "txtTaskTitle";
+            txtTaskTitle.Size = new Size(400, 23);
+            txtTaskTitle.TabIndex = 2;
+            // 
+            // lblTaskDesc
+            // 
+            lblTaskDesc.Location = new Point(20, 110);
+            lblTaskDesc.Name = "lblTaskDesc";
+            lblTaskDesc.Size = new Size(100, 20);
+            lblTaskDesc.TabIndex = 3;
+            lblTaskDesc.Text = "Description:";
+            // 
+            // txtTaskDescription
+            // 
+            txtTaskDescription.Location = new Point(130, 110);
+            txtTaskDescription.Multiline = true;
+            txtTaskDescription.Name = "txtTaskDescription";
+            txtTaskDescription.Size = new Size(400, 60);
+            txtTaskDescription.TabIndex = 4;
+            // 
+            // lblTaskDue
+            // 
+            lblTaskDue.Location = new Point(20, 185);
+            lblTaskDue.Name = "lblTaskDue";
+            lblTaskDue.Size = new Size(100, 20);
+            lblTaskDue.TabIndex = 5;
+            lblTaskDue.Text = "Due Date:";
+            // 
+            // dtpTaskDueDate
+            // 
+            dtpTaskDueDate.Location = new Point(130, 185);
+            dtpTaskDueDate.Name = "dtpTaskDueDate";
+            dtpTaskDueDate.Size = new Size(200, 23);
+            dtpTaskDueDate.TabIndex = 6;
+            dtpTaskDueDate.Value = new DateTime(2026, 11, 15, 11, 55, 7, 317);
+            // 
+            // btnAddTask
+            // 
+            btnAddTask.Location = new Point(130, 225);
+            btnAddTask.Name = "btnAddTask";
+            btnAddTask.Size = new Size(120, 30);
+            btnAddTask.TabIndex = 7;
+            btnAddTask.Text = "Add Task";
+            btnAddTask.UseVisualStyleBackColor = true;
+            btnAddTask.Click += btnAddTask_Click;
+            // 
+            // lstTasks
+            // 
+            lstTasks.ItemHeight = 15;
+            lstTasks.Location = new Point(20, 280);
+            lstTasks.Name = "lstTasks";
+            lstTasks.Size = new Size(600, 199);
+            lstTasks.TabIndex = 8;
+            lstTasks.SelectedIndexChanged += lstTasks_SelectedIndexChanged;
+            // 
+            // lblTaskDetail
+            // 
+            lblTaskDetail.Location = new Point(650, 280);
+            lblTaskDetail.Name = "lblTaskDetail";
+            lblTaskDetail.Size = new Size(400, 120);
+            lblTaskDetail.TabIndex = 9;
+            lblTaskDetail.Text = "Select a task to see details";
+            // 
+            // lblTaskCount
+            // 
+            lblTaskCount.Location = new Point(20, 490);
+            lblTaskCount.Name = "lblTaskCount";
+            lblTaskCount.Size = new Size(300, 20);
+            lblTaskCount.TabIndex = 10;
+            lblTaskCount.Text = "Pending: 0 / Total: 0";
+            // 
+            // btnCompleteTask
+            // 
+            btnCompleteTask.Location = new Point(20, 520);
+            btnCompleteTask.Name = "btnCompleteTask";
+            btnCompleteTask.Size = new Size(140, 30);
+            btnCompleteTask.TabIndex = 11;
+            btnCompleteTask.Text = "Mark Complete";
+            btnCompleteTask.UseVisualStyleBackColor = true;
+            btnCompleteTask.Click += btnCompleteTask_Click;
+            // 
+            // btnDeleteTask
+            // 
+            btnDeleteTask.Location = new Point(180, 520);
+            btnDeleteTask.Name = "btnDeleteTask";
+            btnDeleteTask.Size = new Size(120, 30);
+            btnDeleteTask.TabIndex = 12;
+            btnDeleteTask.Text = "Delete Task";
+            btnDeleteTask.UseVisualStyleBackColor = true;
+            btnDeleteTask.Click += btnDeleteTask_Click;
             // 
             // tabQuiz
             // 
-            tabQuiz.BackColor = Color.Teal;
-            tabQuiz.Controls.Add(btnNextQuestion_click);
-            tabQuiz.Controls.Add(btnSubmitAnswer_click);
-            tabQuiz.Controls.Add(btnStartQuiz_click);
+            tabQuiz.BackColor = Color.SkyBlue;
+            tabQuiz.Controls.Add(btnNextQuestion);
+            tabQuiz.Controls.Add(btnSubmitAnswer);
+            tabQuiz.Controls.Add(btnStartQuiz);
             tabQuiz.Controls.Add(rdoOptionD);
             tabQuiz.Controls.Add(rdoOptionC);
             tabQuiz.Controls.Add(rdoOptionB);
@@ -303,7 +328,6 @@
             tabQuiz.Controls.Add(lblQuestion);
             tabQuiz.Controls.Add(lblQuestionNumber);
             tabQuiz.Controls.Add(lblScore);
-            tabQuiz.ForeColor = SystemColors.ControlText;
             tabQuiz.Location = new Point(4, 24);
             tabQuiz.Name = "tabQuiz";
             tabQuiz.Size = new Size(1259, 723);
@@ -311,33 +335,35 @@
             tabQuiz.Text = "Quiz";
             tabQuiz.Click += tabQuiz_Click;
             // 
-            // btnNextQuestion_click
+            // btnNextQuestion
             // 
-            btnNextQuestion_click.Location = new Point(533, 392);
-            btnNextQuestion_click.Name = "btnNextQuestion_click";
-            btnNextQuestion_click.Size = new Size(129, 23);
-            btnNextQuestion_click.TabIndex = 12;
-            btnNextQuestion_click.Text = "Next Question";
-            btnNextQuestion_click.UseVisualStyleBackColor = true;
+            btnNextQuestion.Location = new Point(533, 392);
+            btnNextQuestion.Name = "btnNextQuestion";
+            btnNextQuestion.Size = new Size(129, 23);
+            btnNextQuestion.TabIndex = 12;
+            btnNextQuestion.Text = "Next Question";
+            btnNextQuestion.UseVisualStyleBackColor = true;
+            btnNextQuestion.Click += btnNextQuestion_Click;
             // 
-            // btnSubmitAnswer_click
+            // btnSubmitAnswer
             // 
-            btnSubmitAnswer_click.Location = new Point(381, 392);
-            btnSubmitAnswer_click.Name = "btnSubmitAnswer_click";
-            btnSubmitAnswer_click.Size = new Size(75, 23);
-            btnSubmitAnswer_click.TabIndex = 11;
-            btnSubmitAnswer_click.Text = "Submit Answer";
-            btnSubmitAnswer_click.UseVisualStyleBackColor = true;
-            btnSubmitAnswer_click.Click += btnSubmitAnswer_Click_1;
+            btnSubmitAnswer.Location = new Point(381, 392);
+            btnSubmitAnswer.Name = "btnSubmitAnswer";
+            btnSubmitAnswer.Size = new Size(110, 23);
+            btnSubmitAnswer.TabIndex = 11;
+            btnSubmitAnswer.Text = "Submit Answer";
+            btnSubmitAnswer.UseVisualStyleBackColor = true;
+            btnSubmitAnswer.Click += btnSubmitAnswer_Click;
             // 
-            // btnStartQuiz_click
+            // btnStartQuiz
             // 
-            btnStartQuiz_click.Location = new Point(396, 90);
-            btnStartQuiz_click.Name = "btnStartQuiz_click";
-            btnStartQuiz_click.Size = new Size(75, 23);
-            btnStartQuiz_click.TabIndex = 10;
-            btnStartQuiz_click.Text = "Start Quiz";
-            btnStartQuiz_click.UseVisualStyleBackColor = true;
+            btnStartQuiz.Location = new Point(396, 90);
+            btnStartQuiz.Name = "btnStartQuiz";
+            btnStartQuiz.Size = new Size(110, 23);
+            btnStartQuiz.TabIndex = 10;
+            btnStartQuiz.Text = "Start Quiz";
+            btnStartQuiz.UseVisualStyleBackColor = true;
+            btnStartQuiz.Click += btnStartQuiz_Click;
             // 
             // rdoOptionD
             // 
@@ -372,12 +398,10 @@
             // rdoOptionA
             // 
             rdoOptionA.AutoSize = true;
-            rdoOptionA.Checked = true;
             rdoOptionA.Location = new Point(200, 183);
             rdoOptionA.Name = "rdoOptionA";
             rdoOptionA.Size = new Size(73, 19);
             rdoOptionA.TabIndex = 6;
-            rdoOptionA.TabStop = true;
             rdoOptionA.Text = "Option A";
             rdoOptionA.UseVisualStyleBackColor = true;
             // 
@@ -404,7 +428,6 @@
             lblQuizTitle.AutoSize = true;
             lblQuizTitle.Font = new Font("Segoe UI", 14F);
             lblQuizTitle.Location = new Point(169, 40);
-            lblQuizTitle.Margin = new Padding(5, 0, 5, 0);
             lblQuizTitle.Name = "lblQuizTitle";
             lblQuizTitle.Size = new Size(223, 25);
             lblQuizTitle.TabIndex = 3;
@@ -439,52 +462,56 @@
             // 
             // tabLog
             // 
+            tabLog.BackColor = SystemColors.ActiveCaption;
+            tabLog.Controls.Add(lstActivityLog);
+            tabLog.Controls.Add(btnShowMoreLog);
             tabLog.Location = new Point(4, 24);
             tabLog.Name = "tabLog";
             tabLog.Size = new Size(1259, 723);
             tabLog.TabIndex = 3;
             tabLog.Text = "Activity Log";
-            tabLog.UseVisualStyleBackColor = true;
+            // 
+            // lstActivityLog
+            // 
+            lstActivityLog.ItemHeight = 15;
+            lstActivityLog.Location = new Point(20, 20);
+            lstActivityLog.Name = "lstActivityLog";
+            lstActivityLog.Size = new Size(800, 394);
+            lstActivityLog.TabIndex = 0;
+            // 
+            // btnShowMoreLog
+            // 
+            btnShowMoreLog.Location = new Point(20, 440);
+            btnShowMoreLog.Name = "btnShowMoreLog";
+            btnShowMoreLog.Size = new Size(150, 30);
+            btnShowMoreLog.TabIndex = 1;
+            btnShowMoreLog.Text = "Show More";
+            btnShowMoreLog.Click += btnShowMoreLog_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1267, 751);
             Controls.Add(tabControl1);
-            Controls.Add(button1);
-            Controls.Add(textBox1);
-            Controls.Add(pictureBox2);
-            Controls.Add(button2);
-            Controls.Add(txtUserInput);
-            Controls.Add(pictureBox1);
             Name = "Form1";
-            Text = "Start!";
+            Text = "Cybersecurity Chatbot";
             Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             tabControl1.ResumeLayout(false);
             tabChat.ResumeLayout(false);
             tabChat.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            tabTasks.ResumeLayout(false);
+            tabTasks.PerformLayout();
             tabQuiz.ResumeLayout(false);
             tabQuiz.PerformLayout();
+            tabLog.ResumeLayout(false);
             ResumeLayout(false);
-            PerformLayout();
         }
-
         #endregion
 
-        private Button button1;
-        private PictureBox pictureBox1;
-        private RichTextBox txtLog;
-        private TextBox txtUserInput;
-        private Button button2;
-        private PictureBox pictureBox2;
-        private TextBox textBox1;
         private TabControl tabControl1;
         private TabPage tabChat;
         private TabPage tabTasks;
@@ -497,18 +524,33 @@
         private PictureBox pictureBox4;
         private TextBox textBox2;
         private Button button3;
+        private Label lblTaskInfo;
         private Label lblQuizTitle;
         private Label lblQuestion;
         private Label lblQuestionNumber;
         private Label lblScore;
         private Label lblFinalScore;
         private Label lblFeedback;
-        private Button btnSubmitAnswer_click;
-        private Button btnStartQuiz_click;
+        private Button btnSubmitAnswer;
+        private Button btnStartQuiz;
         private RadioButton rdoOptionD;
         private RadioButton rdoOptionC;
         private RadioButton rdoOptionB;
         private RadioButton rdoOptionA;
-        private Button btnNextQuestion_click;
+        private Button btnNextQuestion;
+        private ListBox lstActivityLog;
+        private Button btnShowMoreLog;
+        private Label lblTaskTitle;
+        private TextBox txtTaskTitle;
+        private Label lblTaskDesc;
+        private TextBox txtTaskDescription;
+        private Label lblTaskDue;
+        private DateTimePicker dtpTaskDueDate;
+        private Button btnAddTask;
+        private ListBox lstTasks;
+        private Label lblTaskDetail;
+        private Label lblTaskCount;
+        private Button btnCompleteTask;
+        private Button btnDeleteTask;
     }
 }
